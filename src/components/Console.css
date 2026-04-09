@@ -1,0 +1,82 @@
+.console {
+  flex: 1;
+  padding: 1.5rem;
+  background: #0f172a;
+  overflow-y: auto;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.light .console {
+  background: #f8fafc;
+}
+
+.console-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #64748b;
+  text-align: center;
+}
+
+.light .console-empty {
+  color: #94a3b8;
+}
+
+.console-output {
+  space-y: 0.5rem;
+}
+
+.console-line {
+  margin-bottom: 0.5rem;
+  color: #f1f5f9;
+  display: flex;
+  gap: 0.5rem;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+.light .console-line {
+  color: #0f172a;
+}
+
+.console-chevron {
+  color: #3b82f6;
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+.light .console-chevron {
+  color: #2563eb;
+}
+
+.console::-webkit-scrollbar {
+  width: 8px;
+}
+
+.console::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.light .console::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+
+.console::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+.light .console::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+.console::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+.light .console::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
